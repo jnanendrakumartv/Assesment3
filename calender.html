@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calender Generate</title>
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'><!-- for font awasome icons -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="./css/calender.css">
+    <script type="text/javascript" src="./javascript/calender.js"></script>
+</head>
+<body>
+	<div id="nav" class="container-fluid">
+		<div class="row align">
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+  		    	<div><i class="fa fa-bars" ></i>Home</div>
+	    </div>
+	    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+		  <img  class="bmw" src="./image/bmw.png" width="40" height="35" ><b class="text">BMW</b></i>
+      </div>	          
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><i class='far fa-bell' style="font-size:25px"></i></div>
+          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><a href="./home.html" onclick="close()">Logout</a></div>
+      </div></div>
+
+       <div class="middle">
+        <div  class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <div id="jk" class="row wise">
+              <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"> </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <label id="lblGreetings"></label>
+                      <script>
+                          var myDate = new Date();
+                          var hrs = myDate.getHours();
+                          var greet;
+                          if (hrs < 12)
+                              greet = 'Good Morning';
+                          else if (hrs >= 12 && hrs <= 17)
+                              greet = 'Good Afternoon';
+                          else if (hrs >= 17 && hrs <= 24)
+                              greet = 'Good Evening';
+                          document.getElementById('lblGreetings').innerHTML =
+                              '<b>' + greet + '</b> ';
+                      </script> <h5><b>User</b></h5>
+              </div>
+              <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 "></div>
+              <div  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 data">
+                <div class="time">
+            <p id="demo"></p>
+              <script>
+              var d = new Date();
+              document.getElementById("demo").innerHTML = d;
+              </script>
+           </div>
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 data">
+                TEMP <img src="./image/temp2.png" width="40" height="30" ><BR> 87 C
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 data">
+                SIGNAL <img src="./image/wifi1.png" width="40" height="30" >
+              </div>
+            </div>
+            <b class="book"><i class='fas fa-th-large'></i>DEVICES</b>
+            </div> 
+    <div class="row ">           
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"> 
+              <div>
+                <div class="inside">
+                  <div class="row picture arts " id="escape" onmouseover="abc()">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 " id="escape" onmouseover="abc()">
+                      July <br>14 <b>June</b>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                      <img src="./image/aa.jpg" width="90" height="90">
+                    </div>
+                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 ">
+                      <b>Rio Carnival Brazil</b>
+                      <p class="text">The Carnival in Rio de Janeiro is a world famous festival held before Lent every year and considered the bigget carnivel in the world with two million people per day on the streeys. The first festivals of Rio date back to 1723.holiday.</p>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                      <p class="text">10:30-7-30 p.m</p>
+                      <div id="exit">
+                        <button  class="edit">Edit</button>
+                        <button class="edit" onclick="one()">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+   
+                  <div class="row picture arts " id="escape" onmouseover="bca()">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 ">
+                      Mon <br>14 <b>Aug</b>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                      <img src="./image/bb.jpg" width="90" height="90">
+                    </div>
+                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 ">
+                      <b>Coachella Valley Music and Arts Festival, California</b>
+                      <p class="text">"The Coachella Valley Music and Arts Festivalis a three-day annual msic and arts festival, organized by Goldenvoice and held at the Empire Polo Fields in Indio California, in the Inland Empire's Coachella Valley."</p>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                      <p class="text">10:30-7-30 p.m</p>
+                      <div id="exit1">
+                        <button  class="edit">Edit</button>
+                        <button class="edit" onclick="two()">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row picture arts" id="escape" onmouseover="cab()">
+                    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 ">
+                      Wed <br>10 <b>Sept</b>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                      <img src="./image/cc.jpeg" width="90" height="90">
+                    </div>
+                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 ">
+                      <b>Burning Man,Nevada</b>
+                      <p class="text">"Burning Man is an anual event held in the Black Rock Desert in northern Neveda, in the United States. the event start on the Monday before and ends on the day of the American Labor Day holiday."</p>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                      <p class="text">10:30-7-30 p.m</p>
+                      <div id="exit2">
+                        <button  class="edit">Edit</button>
+                        <button class="edit" onclick="three()">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="design" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <div class="right"><h2><b>Events Calender</b></h2><body onload="displayCalendar()"> 
+                 <div id="calendar"></div><br><button class="button">! Create an Event</button>
+            </div></body>
+          </div>
+    </div>
+    
+  </body>
+  </html>
+   

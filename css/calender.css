@@ -1,0 +1,150 @@
+
+.center {
+  text-align: center;
+}
+.nav{
+  background-color: #bababa;
+}
+
+a { font-size: 20px;}
+
+
+.picture { background-color: white;
+ margin-bottom: 20px;
+  height: 130px;
+ 
+   }
+.inside {
+  background-color: #bababa;
+  width: 95%;
+  border: 2px solid white;
+  border-radius: 3px;
+  margin: 0 22px;
+  padding: 15px 25px;
+}
+.arts { padding: 20px; 
+
+}
+
+.edit {
+
+  font-size: 12px;
+  border: white solid 2px;
+  border-radius: 50px;
+  width: 100px;
+  height: 25px;
+}
+.edit:hover{
+  background-color: #63e0f9;
+   
+}
+#escape{
+  background-color: white;
+}
+.monthPre{
+             color: gray;
+             text-align: center;
+            }
+            .monthNow{
+             color: blue;
+             text-align: center;
+            }
+            .dayNow{
+             border: 2px solid black;
+             color: red;
+             text-align: center;
+             background-color: #7fbcf9;
+            }
+            #calendar{
+            background-color: #eaedf2;
+            width: 290px;
+            }
+            .calendar td{ 
+             htmlContent: 2px;
+             width: 80px;
+            }
+            .button{
+              background-color: #4e72ad;
+              color: white;
+              height: 30px;
+              width: 200px;
+              border-radius: 25px;
+              align-content: center;
+              margin-left: 70px;
+            }
+            .monthNow th{
+             background-color: #90dcf9;
+             color: #FFFFFF;
+             text-align: center;
+            }
+            .dayNames{
+             background: #f280ce;
+             color: #FFFFFF;
+             text-align: center;
+            }
+.row {
+    padding: 10px;
+	background-color: white;
+}
+.rowise{
+	background-color: white;
+	padding: 10px;
+
+}
+.text{ 
+	font-size:14px;
+	color: black; 
+}
+
+.align {
+	text-align: center;
+  background-color: #bababa;
+}
+#jk{
+	background-color: #edeff2;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+#goodmorning {
+ font-size: 18px;
+  }
+ .wise {
+	margin-top: 50px;
+}
+.data {
+	border-radius: 5px;
+	margin-left: 20px;
+	background-color: #dbd9d9;
+	height: 110px;
+	padding: 10px 40px;
+}
+.book {
+	margin-left: 70px;
+
+}
+.ondate{
+	font-size: 12px;
+}
+.time{
+	font-size: 10px;
+}
+.content {
+	width: 100px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" type="text/css" href="./css/signup.css">
+		<script type="text/javascript" src="./javascript/signup.js"></script>
+
+</head>
+<body>
+   <div class="container" id="container">
+   	<div class="row">
+   		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<label class="register">Regester as a</label>
+					<button id="residentbutton" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+						Resident 
+					</button>
+					<form name="signupform" method="get" onsubmit=" return check_value()">
+						<table>
+						<tr>
+							<td><label id="firstname">First Name</label><input type="text" class="boxlength" name="firstname" id="idfirstname"><p class="color" id="perso_name"></p></td>
+							<td><label id="lastname">Last Name</label><input type="text" class="boxlength" name="lastname" id="idlastname"><p class="color" id="last_name"></p></td>
+	            		<tr>
+							<td><label id="email">Email</label><input type="text" class="boxlength" name="email" id="emailid"><p id="email_id" class="color"></p></td>
+							<td><label id="phone">Phone Number</label><input type="text" class="boxlength" name="phone_number" id="phone_id"><p class="color" id="phone_id_number"></p></td>
+	            		</tr>
+	            		<tr>
+							<td><label id="firstaddress">Street Address1</label><input type="text" class="boxlength" placeholder="Street line1" name="firstaddress" id="address_id"><p class="color" id="addressid"></p></td>
+							<td><label id="secondaddress">Street Address2</label><input type="text" class="boxlength" placeholder="Street line2" name="secondaddress" id="address_id2"><p class="color" id="addressid2"></p></td>
+	            		</tr>
+	            		<tr>
+							<td><label id="city">City</label><input type="text" class="boxlength" placeholder="City" name="city" id="cityid"><p class="color" id="city_id"></p></td>
+							<td>
+								<!-- <div class="right"> -->
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label id="state">State</label><input type="text" class="little" id="stateid"  placeholder="State" name="state"><p class="color" id="state_id"></p>
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+										<label id="zip">Zip</label><input type="text" class="little" id="zipid"  placeholder="Zip" name="zip"><p class="color" id="zip_id"></p>
+									</div>
+							</td>
+	            		</tr>
+	            		<tr>
+							<td><label id="password">Create Password</label><input type="password" class="boxlength" id="passwordid" name="password"><p class="color" id="password_id"></p></td>
+							<td><label id="verifypassword">Verify Password</label><input type="password" class="boxlength" id="verifypasswordid" name="verifypassword"><p class="color" id="verifypassword_id"></p></td>
+	            		</tr>
+					</table>
+					<button type="submit" id="subbutton" class="btn btn-info center"onclick="window.location.href='./calender.html'" >Submit</button>
+					<p class="asking">already have an account?
+						<a href="#myModal" role="button" data-toggle="modal"  onclick="window.location.href='./home.html'">Sign in</a>	</p>
+				</div>
+			</form>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>		
+   	</div>	
+   </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/home.css">
+		<script type="text/javascript" src="./javascript/home.js"></script>
+</head>
+<body>
+	<div class="page" id="one">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-4 mb-3"></div>
+				<div class="col-md-6 col-lg-4 mb-3">
+                 <img class="logo" src="./image/bmw.png" >
+    	          <h1 class="title">BMW</h1><br>
+                  <h1 id="h1">WelCome</h1>
+                  <p>Today, many people rely on computer to do<br> homework, work a and create or store the <br> useful information. Therefore is, it is one of<br> important for the information on the cmputer<br> to be stored</p> <br>
+                <button class="loginbutton"  data-toggle="modal" data-target="#myModal">Signin</button><br><br>
+                <button id="sign" class="loginbutton1"  data-toggle="modal" onclick="SignUp()">SignUp</button>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3 "></div>
+			</div>		
+		</div>
+	</div>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+      <div class="modal-dialog"> 
+            <div class="modal-content">
+            	<div class="userbox">
+                <div class="modal-body popup" > 
+                 <img class="logo1" src="./image/bmw.png" >
+    	           <h1 class="title1">BMW</h1><br>  
+                <form name="formvalidate"method="post" onSubmit="return check_Email(this)" action="	signup.html" >
+	                	<label>Email</label>
+	                	<input type="text" class="form-control form-control-lg" name="myemail" required="">
+	                	<p id="signinemail"></p>
+		                <label>Password</label>
+		                <input type="password" class="form-control form-control-lg" name="mypwd" required="">
+		                <p id="signinpwd"></p>
+		               <button type="submit" id="submitbutton" class="submitbutton"> Submit</a></button>
+		                <a href="" class="float-right">Forgot password?</a>  
+		                <p class="qstn">Don't have an account?
+						<a href="#container" class="signupbutton"  onclick="window.location.href='./signup.html'">Sign Up</a></p>
+					</form>
+                </div>
+            </div>
+            </div>
+    	</div>
+    </div>
+</body>
+</html>
